@@ -191,12 +191,13 @@ footer .fa-linkedin-in{
 
 #idiomas .card{
     background-color: #887f92;
-    border-radius: 15px;
     padding: 40px 0;
+    border-radius: 15px;
 }
 
 #idiomas{
     background-color: #eee;
+   
 }
 #idiomas h2{
     font-size: 16px;
@@ -211,33 +212,33 @@ footer .fa-linkedin-in{
     list-style-type: none;
 }
 #idiomas {
-    font-size: 80px;
     color: rgb(212, 207, 207);
+    font-size: 80px;
 }
+
 
 #sobre-mi .card {
     height: 182px;
+   
 }
+#formacion h2 {
+    font-weight: 400;
+    font-size: 24px
+}
+#formacion h2, #formacion h4{
+    color: #fff7f7;
+}
+#formacion h3{
+    color: #6A6A6A;
+    font-size: 18px;
+    font-weight: 600;
 
+}
+ #formacion h4{
+    font-size: 17px;
 
- #formacion h2 {
-     font-weight: 400;
-     font-size: 24px
- }
- #formacion h2, #formacion h4{
-     color: #fff7f7;
- }
- #formacion h3{
-     color: #6A6A6A;
-     font-size: 18px;
-     font-weight: 600;
- 
- }
-  #formacion h4{
-     font-size: 17px;
-     
- }
- #formacion h5{
-     color: #6A6A6A;
-     font-size: 14px;
- }
+}
+#formacion h5{
+    color: #6A6A6A;
+    font-size: 14px;
+} 
