@@ -1,5 +1,38 @@
 <?php
-$pg = "Contacto"; ?>
+$pg = "Contacto"; 
+
+if($_POST){
+    $nombre = $_POST["txtNombre"];
+    $correo = $_POST["txtCorreo"];
+    $telefono = $_POST["txtTelefono"];
+    $mensaje = $_POST["txtMensaje"];
+
+    // Varios destinatarios
+    $para = "magalivictoria000@gmail.com";
+    $titulo = 'Recibiste un mensaje desde tu Web';
+
+    // mensaje
+    $cuerpo = "
+    Nombre: $nombre <br>
+    Correo: $correo <br>
+    Telefono: $telefono <br>
+    Mensaje: $mensaje
+    ";
+
+    // Para enviar un correo HTML, debe establecerse la cabecera Content-type
+    $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
+    $cabeceras .= 'Content-type: text/html; charset=UTF-8' . "\r\n";
+
+    // Cabeceras adicionales
+    $cabeceras .= 'To: magalivictoria000@gmail.com' . "\r\n";
+    $cabeceras .= 'From: magu.fernandez@hotmail.com' . "\r\n";
+
+    // Enviarlo
+    //mail($para, $título, $mensaje, $cabeceras);
+
+    header("Location: confirmacion-envio.php");
+}
+?>
 
 <!DOCTYPE html>
 <html lang="es">
